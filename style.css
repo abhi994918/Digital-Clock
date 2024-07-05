@@ -1,0 +1,174 @@
+body{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aquamarine;
+
+}
+.outer-box{
+  /* border: 2px solid blueviolet; */
+border-radius: 15px;
+width: 30rem;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(to right, rgb(246, 168, 219),orange,yellow,green,violet);
+}
+
+.outer-box h1{
+    color: rgb(13, 2, 10);
+    background-clip: text;
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: black;
+   
+    text-shadow: 2px 0px 10px violet , -5px 0px 20px whitesmoke ;
+}
+
+.circle1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(246, 168, 219);
+  position: relative;
+  box-shadow: inset 2px 1px 4px #000000;
+  top: 25px;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0); /* Initial transform state */
+  animation: moveHorizontally 10s linear infinite; /* Applying the animation */
+}
+
+@keyframes moveHorizontally {
+  0% {
+    
+    background-color: rgb(246, 168, 219);
+}
+10% {
+
+  background-color: #ff6b08;
+  box-shadow: inset 3px 1px 4px #000000;
+}
+20% {
+
+  background-color: yellow;
+  box-shadow: inset 4px 1px 4px #000000;
+}
+30% {
+
+  background-color: yellow;
+  /* box-shadow: inset -3px  -3px 4px #000000; */
+  box-shadow: inset -3px  -1px 4px #000000;
+}
+40% {
+  
+  background-color: green;
+  box-shadow: inset -3px  -1px 4px #000000;
+}
+50% {
+    transform: translateX(450px);
+    background-color: rgb(246, 168, 219);
+}
+
+60% {
+    
+  background-color: green;
+  box-shadow: inset -3px  -1px 4px #000000;
+}
+70% {
+
+background-color: yellow;
+box-shadow: inset -3px  -3px 4px #000000;
+}
+80% {
+
+background-color: yellow;
+}
+90% {
+
+background-color: #ff6b08;
+}
+100% {
+   
+    background-color: rgb(246, 168, 219);
+}
+
+}
+.circle2{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(246, 168, 219) ;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+  position: relative;
+  
+  box-shadow: inset -2px  -1px 4px #000000;
+  
+  top:-20px;
+  left:445px;
+
+ display:inline-flex ;
+ justify-content:end;
+ 
+ 
+ animation: Horizontally 10s linear infinite; 
+}
+@keyframes Horizontally {
+  0% {
+      transform: translateX(0);
+      background-color: rgb(246, 168, 219)
+      
+  }
+ 10% {
+    
+    background-color: green;
+    box-shadow: inset -3px  -1px 4px #000000;
+}
+20% {
+ 
+  background-color: yellow;
+  box-shadow: inset -3px  -3px 4px #000000;
+}
+30% {
+  
+  background-color: yellow;
+  box-shadow: inset 3px 1px 4px #000000;
+}
+40% {
+  
+  background-color: #ff6b08;
+}
+  50% {
+      transform: translateX(-450px);
+      background-color: rgb(246, 168, 219);
+  }
+  60% {
+  
+    background-color: #ff6b08;
+  }
+  70% {
+  
+    background-color: yellow;
+    box-shadow: inset 3px 1px 4px #000000;
+  }
+  80% {
+ 
+    background-color: yellow;
+    box-shadow: inset -3px  -3px 4px #000000;
+  }
+  90% {
+    
+    background-color: green;
+    box-shadow: inset -3px  -1px 4px #000000;
+}
+  100% {
+      transform: translateX(0);
+      background-color: rgb(246, 168, 219);
+  }
+}
